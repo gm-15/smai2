@@ -29,6 +29,7 @@ def openAiModelArg(model, msgs):
     )
     return response.choices[0].message.content
 
-def genaiModel():
+def geminiModel():
+    genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel("gemini-2.0-flash")
     return model
