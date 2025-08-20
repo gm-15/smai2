@@ -1,3 +1,5 @@
+from operator import iconcat
+
 import streamlit as st
 
 #Sidebar
